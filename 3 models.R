@@ -12,8 +12,10 @@ summary(fu_mod)
 
 
 ## Partially Conditional
+pc_mod <- lmer(mathach ~ cent_ses + (1 | id), data=dat)
+summary(pc_mod)
 
 ## Fully Conditional
-
-fc_mod <- lmer(mathach ~ cent_ses + (1 | meanses) +(1 | sector), data=dat)
+fc_mod <- lmer(mathach ~ cent_ses + (1 | id) + (1 | meanses) +(id | sector), data=dat)
 summary(fc_mod)
+
