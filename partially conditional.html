@@ -1,0 +1,161 @@
+
+<!-- saved from url=(0064)file:///C:/Users/trinker/Desktop/Copy/HLM/LABS/Lab%201/hlm2.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head><body bgcolor="FFFFFF" fgcolor="000000">
+<h1>
+  <table width="99%">
+    <tbody><tr>
+      <td width="25%">Program:</td>
+      <td width="75%" align="right">HLM 7 Hierarchical Linear and Nonlinear Modeling</td>
+    </tr>
+    <tr>
+      <td width="25%">Authors:</td>
+      <td width="75%" align="right">Stephen Raudenbush, Tony Bryk, &amp; Richard Congdon</td>
+    </tr>
+    <tr>
+      <td width="25%">Publisher:</td>
+      <td width="75%" align="right">Scientific Software International, Inc. (c) 2010</td>
+    </tr>
+    <tr>
+      <td>
+      </td><td align="right"> techsupport@ssicentral.com<br>www.ssicentral.com </td>
+    </tr>
+  </tbody></table>
+  <hr>
+</h1>
+<h2>
+  <table width="50%">
+    <tbody><tr>
+      <td width="25%">Module:</td>
+      <td width="75%" align="right">HLM2S.EXE (7.01.21202.1001)</td>
+    </tr>
+    <tr>
+      <td width="25%">Date:</td>
+      <td width="75%" align="right">11 February 2014, Tuesday</td>
+    </tr>
+    <tr>
+      <td width="25%">Time:</td>
+      <td width="75%" align="right">22:10:16</td>
+    </tr>
+  </tbody></table>
+  <hr>
+</h2>
+<br>
+<br>
+<h2>Specifications for this HLM2 run</h2>  Problem Title: no title<br>
+<br>
+  The data source for this run  = lab1<br>
+  The command file for this run = C:\Users\trinker\Desktop\Copy\HLM\LABS\Lab 1\partially conditional.hlm<br>
+  Output file name              = C:\Users\trinker\Desktop\Copy\HLM\LABS\Lab 1\hlm2.html<br>
+  The maximum number of level-1 units = 7185<br>
+  The maximum number of level-2 units = 160<br>
+  The maximum number of iterations = 100<br>
+<br>
+  Method of estimation: restricted maximum likelihood<br>
+<br>
+  The outcome variable is  MATHACH    <br>
+<h3>Summary of the model specified</h3>
+<h4>Level-1 Model</h4>
+&nbsp;&nbsp;&nbsp;&nbsp;<i>MATHACH</i><sub><small><i>ij</i></small></sub> = <i>β</i><sub><small><i>0j</i></small></sub> + <i>β</i><sub><small><i>1j</i></small></sub>*(<i>SES</i><sub><small><i>ij</i></small></sub>) + <i>r</i><sub><small><i>ij</i></small></sub>
+<br>
+<h4>Level-2 Model</h4>
+&nbsp;&nbsp;&nbsp;&nbsp;<i>β</i><sub><small><i>0j</i></small></sub> = <i>γ</i><sub><small><i>00</i></small></sub> + <i>u</i><sub><small><i>0j</i></small></sub><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<i>β</i><sub><small><i>1j</i></small></sub> = <i>γ</i><sub><small><i>10</i></small></sub> + <i>u</i><sub><small><i>1j</i></small></sub><br>
+<br>
+SES has been centered around the group mean.<br>
+<h4>Mixed Model</h4>
+&nbsp;&nbsp;&nbsp;&nbsp;<i>MATHACH</i><sub><small><i>ij</i></small></sub> = <i>γ</i><sub><small><i>00</i></small></sub>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;+ <i>γ</i><sub><small><i>10</i></small></sub>*<i>SES</i><sub><small><i>ij</i></small></sub>&nbsp; + <i>u</i><sub><small><i>0j</i></small></sub> + <i>u</i><sub><small><i>1j</i></small></sub>*<i>SES</i><sub><small><i>ij</i></small></sub>&nbsp;+ <i>r</i><sub><small><i>ij</i></small></sub><br>
+
+<h2>Final Results - Iteration 18</h2><b>Iterations stopped due to small change in likelihood function</b><br>
+<br>
+ σ<sup>2</sup> =     36.70356<br>
+<br>
+τ<table border="0" cellpadding="0"><tbody><tr><td>INTRCPT1,<i>β</i><sub><small><i>0</i></small></sub>&nbsp;&nbsp;</td><td align="right">&nbsp;&nbsp;     8.68087</td><td align="right">&nbsp;&nbsp;     0.04701</td></tr><tr><td>     SES,<i>β</i><sub><small><i>1</i></small></sub>&nbsp;&nbsp;</td><td align="right">&nbsp;&nbsp;     0.04701</td><td align="right">&nbsp;&nbsp;     0.68038</td></tr></tbody></table>
+<br>
+τ (as correlations)<table border="0" cellpadding="0"><tbody><tr><td>INTRCPT1,<i>β</i><sub><small><i>0</i></small></sub>&nbsp;&nbsp;</td><td align="right">&nbsp;&nbsp; 1.000</td><td align="right">&nbsp;&nbsp; 0.019</td></tr><tr><td>     SES,<i>β</i><sub><small><i>1</i></small></sub>&nbsp;&nbsp;</td><td align="right">&nbsp;&nbsp; 0.019</td><td align="right">&nbsp;&nbsp; 1.000</td></tr></tbody></table><br>
+<table border="1" cellpadding="3" style="border-collapse:collapse;border:none">
+<tbody><tr>
+<td align="left" style="border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt">Random level-1 coefficient</td>
+<td style="border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt">&nbsp;&nbsp;Reliability estimate</td>
+</tr></tbody><tbody>
+<tr><td style="border:none;padding:0in 5.4pt 0in 5.4pt"> INTRCPT1,<i>β</i><sub><small><i>0</i></small></sub></td><td align="center" style="border:none;padding:0in 5.4pt 0in 5.4pt">0.908</td></tr>
+<tr><td style="border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt">      SES,<i>β</i><sub><small><i>1</i></small></sub></td><td align="center" style="border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt">0.260</td></tr>
+</tbody></table>
+The value of the log-likelihood function at iteration 18 = -2.335620E+004<br>
+<h4> Final estimation of fixed effects:<br>
+</h4><table border="1" cellpadding="3" style="border-collapse:collapse;border:none">
+<tbody><tr>
+<td align="left" style="border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt">Fixed Effect</td>
+<td align="right" style="border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt">&nbsp;Coefficient</td>
+<td align="right" style="border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt">&nbsp;Standard<br> error</td>
+<td align="right" style="border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt">&nbsp;<i>t</i>-ratio</td>
+<td align="right" style="border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt">&nbsp;Approx.<br><i>d.f.</i></td>
+<td align="right" style="border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt">&nbsp;<i>p</i>-value</td>
+</tr>
+</tbody><tbody>
+<tr><td align="left" colspan="6" style="border:none;padding:0in 5.4pt 0in 5.4pt"> For       INTRCPT1, <i>β</i><sub><small><i>0</i></small></sub>
+</td></tr>
+<tr><td style="border:none;padding:0in 5.4pt 0in 5.4pt">&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>γ</i><sub><small><i>00</i></small></sub> </td><td align="right" valign="bottom" style="border:none;padding:0in 5.4pt 0in 5.4pt">    12.636196</td>
+<td align="right" valign="bottom" style="border:none;padding:0in 5.4pt 0in 5.4pt">  0.244503</td>
+<td align="right" valign="bottom" style="border:none;padding:0in 5.4pt 0in 5.4pt">  51.681</td>
+<td align="right" valign="bottom" style="border:none;padding:0in 5.4pt 0in 5.4pt">159</td>
+<td align="right" valign="bottom" style="border:none;padding:0in 5.4pt 0in 5.4pt">&lt;0.001</td>
+</tr><tr><td align="left" colspan="6" style="border:none;padding:0in 5.4pt 0in 5.4pt"> For      SES slope, <i>β</i><sub><small><i>1</i></small></sub>
+</td></tr>
+<tr><td style="border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt">&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>γ</i><sub><small><i>10</i></small></sub> </td><td align="right" valign="bottom" style="border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt">     2.193157</td>
+<td align="right" valign="bottom" style="border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt">  0.127879</td>
+<td align="right" valign="bottom" style="border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt">  17.150</td>
+<td align="right" valign="bottom" style="border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt">159</td>
+<td align="right" valign="bottom" style="border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt">&lt;0.001</td>
+</tr></tbody></table>
+<br>
+<h4> Final estimation of fixed effects<br>
+ (with robust standard errors)
+</h4><table border="1" cellpadding="3" style="border-collapse:collapse;border:none">
+<tbody><tr>
+<td align="left" style="border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt">Fixed Effect</td>
+<td align="right" style="border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt">&nbsp;Coefficient</td>
+<td align="right" style="border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt">&nbsp;Standard<br> error</td>
+<td align="right" style="border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt">&nbsp;<i>t</i>-ratio</td>
+<td align="right" style="border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt">&nbsp;Approx.<br><i>d.f.</i></td>
+<td align="right" style="border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt">&nbsp;<i>p</i>-value</td>
+</tr>
+</tbody><tbody>
+<tr><td align="left" colspan="6" style="border:none;padding:0in 5.4pt 0in 5.4pt"> For       INTRCPT1, <i>β</i><sub><small><i>0</i></small></sub>
+</td></tr>
+<tr><td style="border:none;padding:0in 5.4pt 0in 5.4pt">&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>γ</i><sub><small><i>00</i></small></sub> </td><td align="right" valign="bottom" style="border:none;padding:0in 5.4pt 0in 5.4pt">    12.636196</td>
+<td align="right" valign="bottom" style="border:none;padding:0in 5.4pt 0in 5.4pt">  0.243738</td>
+<td align="right" valign="bottom" style="border:none;padding:0in 5.4pt 0in 5.4pt">  51.843</td>
+<td align="right" valign="bottom" style="border:none;padding:0in 5.4pt 0in 5.4pt">159</td>
+<td align="right" valign="bottom" style="border:none;padding:0in 5.4pt 0in 5.4pt">&lt;0.001</td>
+</tr><tr><td align="left" colspan="6" style="border:none;padding:0in 5.4pt 0in 5.4pt"> For      SES slope, <i>β</i><sub><small><i>1</i></small></sub>
+</td></tr>
+<tr><td style="border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt">&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>γ</i><sub><small><i>10</i></small></sub> </td><td align="right" valign="bottom" style="border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt">     2.193157</td>
+<td align="right" valign="bottom" style="border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt">  0.127846</td>
+<td align="right" valign="bottom" style="border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt">  17.155</td>
+<td align="right" valign="bottom" style="border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt">159</td>
+<td align="right" valign="bottom" style="border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt">&lt;0.001</td>
+</tr></tbody></table>
+<br>
+
+<h4>Final estimation of variance components</h4>
+<table border="1" cellpadding="3" style="border-collapse:collapse;border:none">
+<tbody><tr>
+<td align="left" style="border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt">Random Effect</td>
+<td align="right" style="border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt">Standard<br>&nbsp;Deviation</td>
+<td align="right" style="border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt">Variance<br>&nbsp;Component</td>
+<td align="right" style="border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt">&nbsp;&nbsp;<i>d.f.</i></td>
+<td align="center" style="border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt">χ<sup><small>2</small></sup></td>
+<td align="right" style="border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt"><i>p</i>-value</td>
+</tr>
+</tbody><tbody>
+<tr><td align="right" style="border:none;padding:0in 5.4pt 0in 5.4pt"> INTRCPT1, <i>u</i><sub><small><i>0</i></small></sub></td><td align="right" style="border:none;padding:0in 5.4pt 0in 5.4pt">     2.94633</td><td align="right" style="border:none;padding:0in 5.4pt 0in 5.4pt">     8.68087</td><td align="right" style="border:none;padding:0in 5.4pt 0in 5.4pt"> 159</td><td align="right" style="border:none;padding:0in 5.4pt 0in 5.4pt">  1770.85115</td><td align="right" style="border:none;padding:0in 5.4pt 0in 5.4pt">&lt;0.001</td></tr>
+<tr><td align="right" style="border:none;padding:0in 5.4pt 0in 5.4pt">      SES slope, <i>u</i><sub><small><i>1</i></small></sub></td><td align="right" style="border:none;padding:0in 5.4pt 0in 5.4pt">     0.82485</td><td align="right" style="border:none;padding:0in 5.4pt 0in 5.4pt">     0.68038</td><td align="right" style="border:none;padding:0in 5.4pt 0in 5.4pt"> 159</td><td align="right" style="border:none;padding:0in 5.4pt 0in 5.4pt">   213.43769</td><td align="right" style="border:none;padding:0in 5.4pt 0in 5.4pt">0.003</td></tr>
+<tr><td align="right" style="border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt">level-1, <i>r</i></td><td align="right" style="border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt">     6.05835</td><td align="right" style="border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt">    36.70356</td><td style="border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt">&nbsp;</td><td style="border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt">&nbsp;</td><td style="border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt">&nbsp;</td></tr>
+</tbody></table>
+<h4>Statistics for current covariance components model</h4>
+ Deviance                       = 46712.398927<br>
+ Number of estimated parameters = 4<br>
+
+</body></html>
